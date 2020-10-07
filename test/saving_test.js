@@ -1,10 +1,16 @@
-const mocha = require("mocha");
 const assert = require("assert");
 const MarioChar = require("../models/mariochar");
 
-describe("saving records", function () {
+// Describe tests
+
+//  Connection should be fully made before tests start to run
+//  use a hook to do this
+//  hooks are used to tell mocaha to run a func before or after running  a test
+
+describe("Saving records", function () {
 	// done checks if test is complete
 	//  done is from mocha
+	// it means individual test
 	it("Saves a record to the db", function (done) {
 		var char = new MarioChar({
 			name: "Mario",
@@ -21,3 +27,4 @@ describe("saving records", function () {
 	});
 	// next test
 });
+// mocha uses done to know when a func has
