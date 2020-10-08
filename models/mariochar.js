@@ -12,6 +12,7 @@ const MarioCharSchema = new Schema({
 
 // model
 // create characters in the mariochar collection and base it on the schema
+// mongodb will automatically pluralize this
 const MarioChar = mongoose.model("mariochar", MarioCharSchema);
 
 module.exports = MarioChar;
