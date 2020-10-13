@@ -12,7 +12,7 @@ describe("Saving records", function () {
 	//  done is from mocha
 	// it means individual test
 	it("Saves a record to the db", function (done) {
-		var char = new MarioChar({
+		let char = new MarioChar({
 			name: "Mario",
 		});
 		//   how mongoose allows us save record direclty to db
